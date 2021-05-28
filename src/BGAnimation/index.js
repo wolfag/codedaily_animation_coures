@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, Animated, StyleSheet} from 'react-native';
+import Easing from 'react-native/Libraries/Animated/Easing';
 
 export class BGAnimation extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export class BGAnimation extends Component {
       toValue: 1,
       duration: 1000,
       useNativeDriver: false,
+      easing: Easing.bounce,
     }).start();
   }
 

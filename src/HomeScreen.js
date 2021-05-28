@@ -6,6 +6,7 @@ export default function HomeScreen() {
   return (
     <View>
       <Button routeName="BGAnimation" text="BG color animation" />
+      <Button routeName="EventAnimation" text="Event animation" />
     </View>
   );
 }
