@@ -5,6 +5,7 @@ import HomeScreen from './HomeScreen';
 import BGAnimation from './BGAnimation';
 import EventAnimation from './EventAnimation';
 import DecayAnimation from './DecayAnimation';
+import ExtrapolateAnimation from './ExtrapolateAnimation';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,10 @@ export default function RootNavigate() {
         <Stack.Screen name="BGAnimation" component={BGAnimation} />
         <Stack.Screen name="EventAnimation" component={EventAnimation} />
         <Stack.Screen name="DecayAnimation" component={DecayAnimation} />
+        <Stack.Screen
+          name="ExtrapolateAnimation"
+          component={ExtrapolateAnimation}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

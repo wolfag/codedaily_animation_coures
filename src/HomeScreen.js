@@ -8,6 +8,7 @@ export default function HomeScreen() {
       <Button routeName="BGAnimation" text="BG color animation" />
       <Button routeName="EventAnimation" text="Event animation" />
       <Button routeName="DecayAnimation" text="Decay animation" />
+      <Button routeName="ExtrapolateAnimation" text="Extrapolate animation" />
     </View>
   );
 }
