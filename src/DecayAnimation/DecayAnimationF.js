@@ -2,16 +2,17 @@ import React, {Component, useRef} from 'react';
 
 import {View, Animated, PanResponder, StyleSheet} from 'react-native';
 
-export default function DecayAnimation() {
+export default function DecayAnimationF() {
   const pan = useRef(new Animated.ValueXY()).current;
   const panResponder = useRef(
     PanResponder.create({
       onMoveShouldSetPanResponder: () => true,
       onPanResponderGrant: () => {
-        pan.setOffset({
-          x: pan.x._value,
-          y: pan.y._value,
-        });
+        // pan.setOffset({
+        //   x: pan.x._value,
+        //   y: pan.y._value,
+        // });
+        pan.extractOffset();
       },
       onPanResponderMove: Animated.event(
         [

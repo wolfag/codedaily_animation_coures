@@ -4,8 +4,9 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import BGAnimation from './BGAnimation';
 import EventAnimation from './EventAnimation';
-import DecayAnimation from './DecayAnimation';
+import DecayAnimationF from './DecayAnimation/DecayAnimationF';
 import ExtrapolateAnimation from './ExtrapolateAnimation';
+import DecayAnimationC from './DecayAnimation/DecayAnimationC';
 
 const Stack = createStackNavigator();
 
@@ -16,7 +17,8 @@ export default function RootNavigate() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="BGAnimation" component={BGAnimation} />
         <Stack.Screen name="EventAnimation" component={EventAnimation} />
-        <Stack.Screen name="DecayAnimation" component={DecayAnimation} />
+        <Stack.Screen name="DecayAnimationF" component={DecayAnimationF} />
+        <Stack.Screen name="DecayAnimationC" component={DecayAnimationC} />
         <Stack.Screen
           name="ExtrapolateAnimation"
           component={ExtrapolateAnimation}
